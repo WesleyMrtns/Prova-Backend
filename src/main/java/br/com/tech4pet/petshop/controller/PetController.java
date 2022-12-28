@@ -22,7 +22,7 @@ public class PetController {
     private PetService servico;
 
     @PostMapping
-    public ResponseEntity<Pet> cadastrarPizza(@RequestBody Pet pet){
+    public ResponseEntity<Pet> cadastrarPet(@RequestBody Pet pet){
         return new ResponseEntity<>(servico.cadastrarPet(pet), HttpStatus.CREATED);
     }
 
